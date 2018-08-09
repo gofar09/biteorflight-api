@@ -1,4 +1,4 @@
-class RandomController < ProtectedController
+class RandomController < ApplicationController
 
   # GET /random
   def index
