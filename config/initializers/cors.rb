@@ -15,6 +15,8 @@ if Rails.env.development?
   development_client_origin = "http://localhost:#{development_cors_port}"
 end
 
+
+
 development_client_origin ||= ENV['CLIENT_ORIGIN']
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
