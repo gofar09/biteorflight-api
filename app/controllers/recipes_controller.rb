@@ -3,7 +3,7 @@ class RecipesController < ProtectedController
 
   # GET /recipes
   def index
-    @recipes = Recipe.all
+    @recipes = current_user.recipes.all
 
     render json: @recipes
   end
